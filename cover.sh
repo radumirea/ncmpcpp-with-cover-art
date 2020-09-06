@@ -10,7 +10,7 @@ function add_cover {
 
 ImageLayer 0< <(
 if [ ! -f "$COVER" ]; then
-  cp "$HOME/.ncmpcpp/default_cover.jpg" "$COVER"
+  cp "$HOME/.ncmpcpp/default_cover.png" "$COVER"
 fi
 while inotifywait -q -q -e close_write "$COVER"; do
   add_cover
